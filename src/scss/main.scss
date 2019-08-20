@@ -1,0 +1,27 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat:300,400,500,800&display=swap');
+
+@import 'reset';
+@import 'variables';
+@import 'header';
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+    font-family: 'Lato', sans-serif;
+    height: 200vh;
+    background: gray;
+
+    .container {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+}
+
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Lato', sans-serif;
