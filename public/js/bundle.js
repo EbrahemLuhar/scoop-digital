@@ -86,14 +86,27 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/js/Navbar.js":
+/*!**************************!*\
+  !*** ./src/js/Navbar.js ***!
+  \**************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nvar Navbar =\n/*#__PURE__*/\nfunction () {\n  function Navbar() {\n    _classCallCheck(this, Navbar);\n\n    this.stickyNavEvent();\n    this.mobileMenu();\n  }\n\n  _createClass(Navbar, [{\n    key: \"stickyNavEvent\",\n    value: function stickyNavEvent() {\n      window.onscroll = function () {\n        myFunction();\n      };\n\n      var navbar = document.querySelector(\"nav\");\n      var landingTop = document.querySelector('.landing-top');\n      var sticky = navbar.offsetTop; // Add the sticky class to the navbar when you reach its scroll position. Remove \"sticky\" when you leave the scroll position\n\n      function myFunction() {\n        if (window.pageYOffset >= sticky) {\n          navbar.classList.add(\"sticky\");\n          landingTop.style.marginTop = \"60px\";\n        } else {\n          navbar.classList.remove(\"sticky\");\n          landingTop.style.marginTop = \"0\";\n        }\n      }\n    }\n  }, {\n    key: \"mobileMenu\",\n    value: function mobileMenu() {\n      var mobileIcon = document.querySelector('#nav-icon1');\n      mobileIcon.addEventListener('click', function () {\n        mobileIcon.classList.toggle('open');\n      });\n    }\n  }]);\n\n  return Navbar;\n}();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Navbar);\n\n//# sourceURL=webpack:///./src/js/Navbar.js?");
+
+/***/ }),
+
 /***/ "./src/js/index.js":
 /*!*************************!*\
   !*** ./src/js/index.js ***!
   \*************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("// ScrollOut({\n//     threshold: 0.5\n// });\n// var rellax = new Rellax('.rellax');\nwindow.onscroll = function () {\n  myFunction();\n}; // Get the navbar\n\n\nvar navbar = document.querySelector(\"nav\");\nvar landingTop = document.querySelector('.landing-top'); // Get the offset position of the navbar\n\nvar sticky = navbar.offsetTop; // Add the sticky class to the navbar when you reach its scroll position. Remove \"sticky\" when you leave the scroll position\n\nfunction myFunction() {\n  if (window.pageYOffset >= sticky) {\n    navbar.classList.add(\"sticky\");\n    landingTop.style.marginTop = \"60px\";\n  } else {\n    navbar.classList.remove(\"sticky\");\n    landingTop.style.marginTop = \"0\";\n  }\n}\n\nvar mobileIcon = document.querySelector('#nav-icon1');\nmobileIcon.addEventListener('click', function () {\n  mobileIcon.classList.toggle('open');\n});\n\n//# sourceURL=webpack:///./src/js/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Navbar */ \"./src/js/Navbar.js\");\n// ScrollOut({\n//     threshold: 0.5\n// });\n// var rellax = new Rellax('.rellax');\n\nvar navbar = new _Navbar__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ })
 
