@@ -2,6 +2,7 @@ class Navbar {
     constructor() {
         this.HamburgerAnimation();
         this.MobileDropDown();
+        this.MakeLinkBlue();
     }
 
     HamburgerAnimation() {
@@ -35,6 +36,29 @@ class Navbar {
                 }
             });
         }
+    }
+
+    MakeLinkBlue() {
+        const aboutSubLink = document.querySelector('.submenu__about');
+        const aboutNavLink = document.querySelector('.drop-down__about a');
+        const serviceSubLink = document.querySelector('.submenu__service');
+        const serviceNavLink = document.querySelector('.drop-down__service a');
+
+        aboutSubLink.addEventListener('mouseenter', () => {
+            aboutNavLink.classList.add('nav-hover-blue');
+        });
+
+        aboutSubLink.addEventListener('mouseleave', () => {
+            aboutNavLink.classList.remove('nav-hover-blue');
+        });
+
+        serviceSubLink.addEventListener('mouseenter', () => {
+            serviceNavLink.classList.add('nav-hover-blue');
+        });
+
+        serviceSubLink.addEventListener('mouseleave', () => {
+            serviceNavLink.classList.remove('nav-hover-blue');
+        });
     }
 }
 

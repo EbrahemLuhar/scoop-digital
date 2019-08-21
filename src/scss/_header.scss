@@ -59,14 +59,20 @@ header {
               display: flex;
               align-items: center;
               justify-content: center;
-              font-size: 0.75rem;
+              font-size: 0.7rem;
               letter-spacing: 1px;
               color: $lightGray;
               background: $navy;
-              transition: all 250ms ease-in-out;
+              border: 2px solid transparent;
+              border-top-left-radius: 15px;
+              border-top-right-radius: 15px;
+              transition: all 150ms ease-in-out;
               
               &:hover {
-                background: gray;
+                background: #ffffff;
+                color: $navy;
+                border: 2px solid $lightBlue;
+                border-bottom: none;
               }
 
               .fa-chevron-down {
@@ -78,7 +84,43 @@ header {
               display: none;
               position: absolute;
               flex-direction: column;
-              box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+              box-shadow: 0px 8px 7px 0px rgba(0, 0, 0, 0.10);
+              border-bottom-left-radius: 15px;
+              border-bottom-right-radius: 15px;
+
+              li {
+                &:last-child a {
+                  border-bottom-left-radius: 15px;
+                  border-bottom-right-radius: 15px;
+                  border-bottom: 2px solid $lightBlue;
+
+                  &:hover {
+                    border-bottom: 2px solid $lightBlue;
+                  }
+                }
+
+                a {
+                  border: 2px solid transparent;
+                  border-top-left-radius: 0;
+                  border-top-right-radius: 0;
+                  background-color: #ffffff; 
+                  border-left: 2px solid $lightBlue;
+                  border-right: 2px solid $lightBlue;
+                  border-bottom: none;
+                  border-top: none;
+                  color: $navy;
+
+                  &:hover {
+                    background: #ffffff;
+                    color: $navy;
+                    border-left: 2px solid $lightBlue;
+                    border-right: 2px solid $lightBlue;
+                    border-bottom: none;
+                    border-top: none;
+                    color: $lightBlue;
+                  }
+                }
+              }
             }
           }
         }
@@ -93,6 +135,13 @@ header {
 
 .mobile-top {
   display: none;
+}
+
+.nav-hover-blue {
+  background: #ffffff !important;
+  color: $navy !important;
+  border: 2px solid $lightBlue !important; 
+  border-bottom: none !important;
 }
 
 // Sticky is toggled for desktop nav
@@ -212,7 +261,7 @@ header {
             padding: 1rem;
             color: $lightGray;
             background: $navy;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             letter-spacing: 1px;
             transition: all 150ms ease;
 
