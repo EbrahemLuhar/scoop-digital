@@ -1,33 +1,40 @@
 class Navbar {
     constructor() {
-        this.stickyNavEvent();
-        this.mobileMenu();
+        this.HamburgerAnimation();
+        this.MobileDropDown();
     }
 
-    stickyNavEvent() {
-        window.onscroll = function() {myFunction()};
-        const navbar = document.querySelector("nav");
-        const landingTop = document.querySelector('.landing-top');
-        const sticky = navbar.offsetTop;
-    
-        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky");
-                landingTop.style.marginTop = "60px";
-            } else {
-                navbar.classList.remove("sticky");
-                landingTop.style.marginTop = "0";
-            }
-        }
-    }
-
-    mobileMenu() {
+    HamburgerAnimation() {
         const mobileIcon = document.querySelector('#nav-icon1');
+        const mobileNav = document.querySelector('#mobile-menu');
 
         mobileIcon.addEventListener('click', () => {
             mobileIcon.classList.toggle('open');
-        })
+            mobileNav.classList.toggle('nav-visible');
+        });
+    }
+
+    CloseDropDowns(arg) {
+        for (let i = 0; i < arg.length; i++) {
+            arg[i].childNodes[3].style.display = "none";
+        }
+
+    }
+
+    MobileDropDown() {
+        const mobileDropDownParent = document.querySelectorAll('.mobile-drop-down');
+
+        for(let i = 0; i < mobileDropDownParent.length; i++) {
+            mobileDropDownParent[i].addEventListener('click', () => {
+                let dropDownStatus = mobileDropDownParent[i].childNodes[3].style.display;
+
+                if (dropDownStatus === "flex") {
+                    mobileDropDownParent[i].childNodes[3].style.display = "none";
+                } else {
+                    mobileDropDownParent[i].childNodes[3].style.display = "flex"; 
+                }
+            });
+        }
     }
 }
 
