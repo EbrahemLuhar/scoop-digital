@@ -1,14 +1,57 @@
 #landing-top {
-  padding-top: 60px;
 
   .container {
-      padding: 60px 20px;
-    h1 {
-        font-family: 'Montserrat', sans-serif;
+    padding: 0 20px;
+
+    .jumbo-top {
+      height: 100vh;
+      padding: 8rem 0 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      h1 {
+        font-family: "Montserrat", sans-serif;
         font-size: 9rem;
         font-weight: 800;
         text-align: center;
-        text-shadow: 3px 3px 2px rgba(150, 150, 150, 1);
+        letter-spacing: 5px;
+        line-height: 1.1;
+        color: $lightBlue;
+        text-shadow: 8px 12px 0px #d4f3ff;
+      }
+
+      p {
+        display: block;
+        margin: 0 auto;
+        max-width: 800px;
+        font-size: 1.2rem;
+        text-align: center;
+        color: $gray;
+        letter-spacing: 1px;
+      }
+
+      a {
+        display: block;
+        margin: 0 auto;
+        text-decoration: none;
+        text-align: center;
+        color: #ffffff;
+        width: 320px;
+        padding: 25px 0;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        background-image: linear-gradient(to right, #46aff9 0%, #b4e4fa 51%, #8eb5f5 100%);
+        background-size: 200% auto;
+        box-shadow: 0 0 10px rgb(224, 224, 224);
+        text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+        transition: 0.5s;
+
+        &:hover {
+          background-position: right center;
+        }
+      }
     }
   }
 }

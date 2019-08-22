@@ -1,0 +1,17 @@
+#landing-banner {
+  background: $orange;
+  padding: 20px;
+
+  .container {
+
+    .banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      img {
+          width: 150px;
+      }
+    }
+  }
+}
