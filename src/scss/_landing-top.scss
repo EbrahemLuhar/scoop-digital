@@ -1,4 +1,6 @@
 #landing-top {
+  position: relative;
+  z-index: 1;
 
   .container {
     padding: 0 20px;
@@ -28,8 +30,9 @@
         max-width: 800px;
         font-size: 1.2rem;
         text-align: center;
-        color: $gray;
+        color: $mediumGray;
         letter-spacing: 1px;
+        font-family: "Montserrat", sans-serif;
       }
 
       a {
@@ -42,16 +45,149 @@
         padding: 25px 0;
         border-top-left-radius: 50px;
         border-bottom-right-radius: 50px;
-        background-image: linear-gradient(to right, #46aff9 0%, #b4e4fa 51%, #8eb5f5 100%);
+        background-image: linear-gradient(
+          to right,
+          #46aff9 0%,
+          #b4e4fa 51%,
+          #8eb5f5 100%
+        );
         background-size: 200% auto;
         box-shadow: 0 0 10px rgb(224, 224, 224);
-        text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
         transition: 0.5s;
 
         &:hover {
           background-position: right center;
         }
       }
+    }
+  }
+
+  .triangle-top {
+    width: 0;
+    height: 0;
+    border-top: 200px solid $orange;
+    border-right: 200px solid transparent;
+    position: absolute;
+    left: 0;
+    top: 60px;
+  }
+
+  .triangle-bottom {
+    width: 0;
+    height: 0;
+    border-bottom: 200px solid $orange;
+    border-left: 200px solid transparent;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  #landing-top {
+    .triangle-top {
+      border-top: 100px solid $orange;
+      border-right: 100px solid transparent;
+      top: 50px;
+    }
+  
+    .triangle-bottom {
+      border-bottom: 100px solid $orange;
+      border-left: 100px solid transparent;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #landing-top {
+    .container {
+      .jumbo-top {
+        h1 {
+          font-size: 6rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+          max-width: 600px;
+        }
+      }
+    }
+
+    .triangle-top {
+      border-top: 150px solid $orange;
+      border-right: 150px solid transparent;
+    }
+
+    .triangle-bottom {
+      border-bottom: 150px solid $orange;
+      border-left: 150px solid transparent;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  #landing-top {
+    .container {
+      .jumbo-top {
+        padding: 8rem 0 5rem;
+
+        h1 {
+          font-size: 3.6rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+        }
+
+        a {
+          width: 250px;
+          padding: 20px 0;
+        }
+      }
+    }
+
+    .triangle-top {
+      border-top: 80px solid $orange;
+      border-right: 80px solid transparent;
+    }
+
+    .triangle-bottom {
+      border-bottom: 80px solid $orange;
+      border-left: 80px solid transparent;
+    }
+  }
+}
+
+@media (max-height: 480px) {
+  #landing-top {
+    .container {
+      .jumbo-top {
+        padding: 3rem 0 1rem;
+
+        h1 {
+          font-size: 3rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+        }
+
+        a {
+          width: 250px;
+          padding: 20px 0;
+        }
+      }
+    }
+
+    .triangle-top {
+      border-top: 50px solid $orange;
+      border-right: 50px solid transparent;
+    }
+
+    .triangle-bottom {
+      border-bottom: 50px solid $orange;
+      border-left: 50px solid transparent;
     }
   }
 }

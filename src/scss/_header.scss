@@ -3,6 +3,7 @@ header {
   width: 100%;
   display: block;
   background: $navy;
+  z-index: 2;
 
   .container {
     display: flex;

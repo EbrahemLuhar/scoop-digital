@@ -3,14 +3,56 @@
   padding: 20px;
 
   .container {
-
     .banner {
-      display: flex;
-      justify-content: space-between;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      justify-content: center;
       align-items: center;
 
-      img {
+      a {
+        display: block;
+        margin: 0 auto;
+        text-decoration: none;
+
+        img {
           width: 150px;
+          
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  #landing-banner {
+    padding: 15px;
+
+    .container {
+      .banner {
+        grid-template-columns: repeat(3, 1fr);
+        a {
+          img {
+            width: 125px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  #landing-banner {
+    padding: 15px;
+
+    .container {
+      .banner {
+        grid-template-columns: repeat(3, 1fr);
+        a {
+          img {
+            width: 100px;
+          }
+        }
       }
     }
   }
