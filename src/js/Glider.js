@@ -11,7 +11,6 @@ class Glider {
       setGallerySize: false,
       autoPlay: true
     });
-    flkty();
   }
 }
 
