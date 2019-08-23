@@ -86,6 +86,18 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/js/Glider.js":
+/*!**************************!*\
+  !*** ./src/js/Glider.js ***!
+  \**************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nvar Glider =\n/*#__PURE__*/\nfunction () {\n  function Glider() {\n    _classCallCheck(this, Glider);\n\n    this.initialiseGlider();\n  }\n\n  _createClass(Glider, [{\n    key: \"initialiseGlider\",\n    value: function initialiseGlider() {\n      var elem = document.querySelector('.carousel');\n      var flkty = new Flickity(elem, {\n        freeScroll: true,\n        wrapAround: true,\n        setGallerySize: false,\n        autoPlay: true\n      });\n      flkty();\n    }\n  }]);\n\n  return Glider;\n}();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Glider);\n\n//# sourceURL=webpack:///./src/js/Glider.js?");
+
+/***/ }),
+
 /***/ "./src/js/Navbar.js":
 /*!**************************!*\
   !*** ./src/js/Navbar.js ***!
@@ -106,7 +118,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nfunction _classCallCheck(inst
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Navbar */ \"./src/js/Navbar.js\");\n// ScrollOut({\n//     threshold: 0.5\n// });\n// var rellax = new Rellax('.rellax');\n\nvar navbar = new _Navbar__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Glider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Glider */ \"./src/js/Glider.js\");\n/* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar */ \"./src/js/Navbar.js\");\n// ScrollOut({\n//     threshold: 0.5\n// });\n// var rellax = new Rellax('.rellax');\n\n\nvar glider = new _Glider__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\nvar navbar = new _Navbar__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ })
 

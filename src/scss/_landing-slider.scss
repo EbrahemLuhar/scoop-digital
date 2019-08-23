@@ -1,0 +1,93 @@
+#landing-slider {
+  background: $offWhite;
+
+  .container {
+    padding: 80px 20px;
+
+    h2 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: $navy;
+      text-align: center;
+      letter-spacing: 1px;
+      padding-bottom: 10px;
+    }
+
+    .carousel {
+      height: 300px;
+      .flickity-button-icon {
+        fill: $gray;
+      }
+      .carousel-cell {
+        width: 100%;
+        height: inherit;
+        margin-right: 10px;
+        border-radius: 5px;
+
+        .carousel-quote {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 0 80px;
+          text-align: center;
+
+          q {
+            font-size: 1.1rem;
+            font-weight: 300;
+            color: $mediumGray;
+            letter-spacing: 1px;
+            padding-bottom: 2.5rem;
+            text-align: center;
+          }
+
+          span {
+            font-family: "Montserrat", sans-serif;
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: $gray;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  #landing-slider {
+    .container {
+      padding: 60px 20px;
+  
+      h2 {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 500px) {
+  #landing-slider {
+    .container {
+      padding: 60px 20px;
+  
+      h2 {
+        font-size: 2rem;
+      }
+
+      .carousel {
+        .flickity-prev-next-button {
+          display: none;
+        }
+        .carousel-cell {
+          .carousel-quote {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
