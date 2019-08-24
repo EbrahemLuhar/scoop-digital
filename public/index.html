@@ -389,11 +389,13 @@
     <section id="landing-contact">
       <div class="container">
         <h2>GET IN TOUCH</h2>
+        <p>Use the form below to contact us and and we'll get back to you as soon as we can. We look forward seeing how we can help you achieve even greater success.</p>
         <div class="contact-wrap">
-          <input type="text">
-          <input type="text">
-          <input type="number">
-          <select name="service" id="service">
+          <input type="text" placeholder="First Name" required>
+          <input type="text" placeholder="Last Name" required>
+          <input type="tel" placeholder="Phone Number" required>
+          <select name="service" id="service" required>
+            <option value="Web Design">I'm looking for...</option>
             <option value="Web Design">Web Design</option>
             <option value="Graphic Design">Graphic Design</option>
             <option value="SEO">SEO</option>
@@ -401,7 +403,7 @@
             <option value="Email Marketing">Email Marketing</option>
             <option value="Maintenance">Maintenance</option>
           </select>
-          <textarea name="message" id="message"></textarea>
+          <textarea name="message" id="message" placeholder="Leave your message here" required></textarea>
         </div>
       </div>
     </section>
