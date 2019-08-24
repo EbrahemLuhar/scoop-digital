@@ -16,6 +16,7 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 20px;
+      overflow-x: hidden;
 
       a {
         text-decoration: none;
@@ -24,7 +25,7 @@
         border-radius: 10px;
         overflow: hidden;
         background-color: #ffffff;
-        transition: all 250ms ease-in-out;
+        transition: all 600ms ease-in-out;
 
         &:hover {
           box-shadow: 0px 3px 10px 0px rgba(193, 200, 207, 1);

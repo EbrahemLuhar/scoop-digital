@@ -1,8 +1,11 @@
-// ScrollOut({
-//     threshold: 0.5
-// });
+ScrollOut({
+    targets: ['h2', '.service'],
+    threshold: 0.4,
+    once: true
+});
 
-// var rellax = new Rellax('.rellax');
+var rellax = new Rellax('.rellax');
+
 import Glider from './Glider';
 import Navbar from './Navbar';
 

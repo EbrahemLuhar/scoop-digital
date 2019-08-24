@@ -1,0 +1,35 @@
+// Landing page sub titles
+h2[data-scroll] {
+  transition: all 1.2s;
+}
+
+h2[data-scroll="in"] {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+h2[data-scroll="out"] {
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+// Landing page service blocks
+.service-left[data-scroll="in"] {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.service-left[data-scroll="out"] {
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
+.service-right[data-scroll="in"] {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.service-right[data-scroll="out"] {
+  opacity: 0;
+  transform: translateX(100px);
+}
