@@ -1,0 +1,117 @@
+footer {
+  background: $navy;
+  .container {
+    padding: 80px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    .footer-row {
+      h4 {
+        font-size: 1.4rem;
+        color: #ffffff;
+        letter-spacing: 1px;
+        padding-bottom: 20px;
+      }
+
+      .footer-links {
+        display: flex;
+
+        .links-left {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .links-right {
+          display: flex;
+          flex-direction: column;
+          padding-left: 20px;
+        }
+
+        a {
+          text-decoration: none;
+          color: $lightGray;
+          font-size: 0.8rem;
+          padding: 3px;
+          margin-bottom: 3px;
+
+          &:hover {
+            color: #ffffff;
+          }
+        }
+      }
+
+      .media-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        a {
+          text-decoration: none;
+          color: $lightGray;
+          padding: 5px;
+
+          &:hover {
+            color: #ffffff;
+          }
+
+          i {
+            font-size: 1.5rem;
+          }
+        }
+      }
+
+      p {
+        text-align: right;
+        color: $lightGray;
+        font-size: 0.8rem;
+        padding: 3px;
+        margin-bottom: 3px;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  footer {
+    .container {
+      padding: 60px 20px 20px;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      
+      .footer-row {
+        padding-bottom: 40px;
+        h4 {
+          font-size: 1.3rem;
+          text-align: center;
+        }
+  
+        .footer-links {
+          .links-left {
+            padding-right: 10px;
+            text-align: center;
+          }
+  
+          .links-right {
+            padding-left: 10px;
+            text-align: center;
+          }
+        }
+  
+        .media-links {
+          flex-direction: row;
+          
+          a {
+            padding: 10px;
+          }
+        }
+  
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

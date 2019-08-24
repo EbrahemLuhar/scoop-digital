@@ -1,8 +1,11 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:300,400,800&display=swap');
 
+// extras
 @import 'reset';
 @import 'variables';
+
+// header
 @import 'header';
 
 // Landing Page
@@ -13,7 +16,8 @@
 @import 'landing-slider';
 @import 'landing-contact';
 
-
+//footer
+@import 'footer';
 
 * {
     box-sizing: border-box;
