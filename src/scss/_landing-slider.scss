@@ -15,7 +15,7 @@
     }
 
     .carousel {
-      height: 300px;
+      height: 200px;
       .flickity-button-icon {
         fill: $gray;
       }
@@ -63,6 +63,10 @@
   
       h2 {
         font-size: 1.8rem;
+      }
+
+      .carousel {
+        height: 300px;
       }
     }
   }
