@@ -118,7 +118,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nfunction _classCallCheck(inst
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Glider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Glider */ \"./src/js/Glider.js\");\n/* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar */ \"./src/js/Navbar.js\");\nScrollOut({\n  targets: ['h2', '.service'],\n  threshold: 0.4,\n  once: true\n});\nvar rellax = new Rellax('.rellax');\n\n\nvar glider = new _Glider__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\nvar navbar = new _Navbar__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Glider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Glider */ \"./src/js/Glider.js\");\n/* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar */ \"./src/js/Navbar.js\");\nScrollOut({\n  targets: ['h2', '.service', '.about-team', '.about-testimonials'],\n  threshold: 0.4,\n  once: true\n});\nvar rellax = new Rellax('.rellax');\n\n\nvar glider = new _Glider__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\nvar navbar = new _Navbar__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ })
 

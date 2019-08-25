@@ -1,4 +1,4 @@
-// Landing page sub titles
+/***** Landing page sub titles *****/
 h2[data-scroll] {
   transition: all 1.2s;
 }
@@ -13,7 +13,7 @@ h2[data-scroll="out"] {
   transform: translateY(100px);
 }
 
-// Landing page service blocks
+/***** Landing page service blocks *****/ 
 .service-left[data-scroll="in"] {
   opacity: 1;
   transform: translateX(0);
@@ -32,4 +32,22 @@ h2[data-scroll="out"] {
 .service-right[data-scroll="out"] {
   opacity: 0;
   transform: translateX(100px);
+}
+
+/***** About page animations *****/ 
+.about-team[data-scroll],
+.about-testimonials[data-scroll] {
+  transition: all 1s;
+}
+
+.about-team[data-scroll="in"],
+.about-testimonials[data-scroll="in"] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-team[data-scroll="out"],
+.about-testimonials[data-scroll="out"] {
+  opacity: 1;
+  transform: translateY(150px);
 }

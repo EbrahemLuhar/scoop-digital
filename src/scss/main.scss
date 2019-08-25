@@ -18,8 +18,10 @@
 @import 'landing-contact';
 
 // About Page
-@import 'about-top';
 @import 'about-main';
+
+// Sub page reusable top section
+@import 'sub-page-top';
 
 //footer
 @import 'footer';

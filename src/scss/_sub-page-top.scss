@@ -1,4 +1,4 @@
-#about-top {
+#sub-page-top {
   padding: 60px 20px 0;
   position: relative;
   z-index: 1;
@@ -43,7 +43,7 @@
 }
 
 @media (max-width: 991px) {
-  #about-top {
+  #sub-page-top {
     padding-top: 50px;
 
     .container {
@@ -59,7 +59,7 @@
 }
 
 @media (max-width: 600px) {
-  #about-top {
+  #sub-page-top {
     .container {
       height: 150px;
       display: flex;
@@ -78,19 +78,19 @@
       }
     }
     .sub-triangle-top {
-      border-top: 80px solid $orange;
-      border-right: 80px solid transparent;
+      border-top: 60px solid $orange;
+      border-right: 60px solid transparent;
     }
 
     .sub-triangle-bottom {
-      border-bottom: 80px solid $orange;
-      border-left: 80px solid transparent;
+      border-bottom: 60px solid $orange;
+      border-left: 60px solid transparent;
     }
   }
 }
 
 @media (max-width: 600px) {
-  #about-top {
+  #sub-page-top {
     .container {
       h1 {
         font-size: 2.5rem;
