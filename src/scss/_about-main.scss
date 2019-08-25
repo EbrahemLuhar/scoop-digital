@@ -109,7 +109,7 @@
     background: $offWhite;
 
     .container {
-        padding: 60px 20px;
+        padding: 40px 20px;
         text-align: center;
       h4 {
         font-family: "Montserrat", sans-serif;
@@ -117,7 +117,7 @@
         font-weight: 600;
         color: $darkGray;
         letter-spacing: 1px;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
       }
 
       p {
@@ -143,10 +143,10 @@
   #about-main {
     .about-info-top {
       .container {
-        padding: 60px 20px;
+        padding: 40px 20px;
 
         h2 {
-          font-size: 2rem;
+          font-size: 1.8rem;
         }
 
         p {
@@ -171,7 +171,7 @@
         .about-team,
         .about-testimonials {
           h3 {
-            font-size: 1.7rem;
+            font-size: 1.5rem;
           }
 
           a {
@@ -185,6 +185,16 @@
 
         .about-testimonials-img {
           display: none;
+        }
+      }
+    }
+
+    aside {
+      background: $offWhite;
+  
+      .container {
+        h4 {
+          font-size: 1.3rem;
         }
       }
     }
