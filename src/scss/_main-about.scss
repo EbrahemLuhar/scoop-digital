@@ -1,32 +1,4 @@
-#about-main {
-  .about-info-top {
-    background: $offWhite;
-
-    .container {
-      padding: 80px 20px;
-
-      h2 {
-        font-family: "Montserrat", sans-serif;
-        font-size: 2.5rem;
-        font-weight: 600;
-        color: $navy;
-        text-align: center;
-        letter-spacing: 1px;
-        padding-bottom: 40px;
-      }
-
-      p {
-        display: block;
-        margin: 0 auto;
-        max-width: 900px;
-        font-size: 1.1rem;
-        font-weight: 300;
-        color: $mediumGray;
-        letter-spacing: 1px;
-        text-align: center;
-      }
-    }
-  }
+#sub-page-subheader {
 
   .about-info-body {
     background: #ffffff;
@@ -107,21 +79,7 @@
 }
 
 @media (max-width: 900px) {
-  #about-main {
-    .about-info-top {
-      .container {
-        padding: 40px 20px;
-
-        h2 {
-          font-size: 1.8rem;
-          padding-bottom: 30px;
-        }
-
-        p {
-          font-size: 1rem;
-        }
-      }
-    }
+  #sub-page-subheader {
 
     .about-info-body {
       .container {
