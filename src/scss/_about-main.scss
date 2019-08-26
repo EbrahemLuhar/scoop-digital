@@ -129,6 +129,7 @@
         a {
           text-decoration: underline;
           color: $darkGray;
+          transition: all 0.2s ease-in-out;
 
           &:hover {
             color: $lightBlue;
