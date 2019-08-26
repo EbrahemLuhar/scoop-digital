@@ -1,12 +1,12 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:300,400,800&display=swap');
 
-// extras
+// Extras
 @import 'reset';
 @import 'variables';
 @import 'animations';
 
-// header
+// Header
 @import 'header';
 
 // Landing Page
@@ -17,11 +17,18 @@
 @import 'landing-slider';
 @import 'landing-contact';
 
-// About Page
-@import 'about-main';
+// About page
+@import 'main-about';
+
+// Meet the team page
+@import 'main-team';
+
+// Testimonials page
+@import 'main-reviews';
 
 // Sub page reusable top section
 @import 'sub-page-top';
+@import 'sub-page-aside';
 
 //footer
 @import 'footer';

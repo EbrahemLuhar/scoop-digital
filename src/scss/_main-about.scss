@@ -104,40 +104,6 @@
       }
     }
   }
-
-  aside {
-    background: $offWhite;
-
-    .container {
-        padding: 40px 20px;
-        text-align: center;
-      h4 {
-        font-family: "Montserrat", sans-serif;
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: $darkGray;
-        letter-spacing: 1px;
-        padding-bottom: 20px;
-      }
-
-      p {
-        font-size: 1rem;
-        font-weight: 300;
-        color: $mediumGray;
-        letter-spacing: 1px;
-
-        a {
-          text-decoration: underline;
-          color: $darkGray;
-          transition: all 0.2s ease-in-out;
-
-          &:hover {
-            color: $lightBlue;
-          }
-        }
-      }
-    }
-  }
 }
 
 @media (max-width: 900px) {
@@ -148,6 +114,7 @@
 
         h2 {
           font-size: 1.8rem;
+          padding-bottom: 30px;
         }
 
         p {
@@ -186,16 +153,6 @@
 
         .about-testimonials-img {
           display: none;
-        }
-      }
-    }
-
-    aside {
-      background: $offWhite;
-  
-      .container {
-        h4 {
-          font-size: 1.3rem;
         }
       }
     }

@@ -1,14 +1,17 @@
 /***** Landing page sub titles *****/
-h2[data-scroll] {
+h2[data-scroll],
+.team-member[data-scroll] {
   transition: all 1.2s;
 }
 
-h2[data-scroll="in"] {
+h2[data-scroll="in"],
+.team-member[data-scroll="in"] {
   opacity: 1;
   transform: translateX(0);
 }
 
-h2[data-scroll="out"] {
+h2[data-scroll="out"],
+.team-member[data-scroll="out"] {
   opacity: 0;
   transform: translateY(100px);
 }
