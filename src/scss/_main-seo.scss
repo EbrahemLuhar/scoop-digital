@@ -1,0 +1,120 @@
+.seo-info-body {
+  .container {
+    padding: 80px 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+
+    .seo-results {
+      background: url(../img/seo1.jpg) no-repeat center center;
+      background-size: cover;
+    }
+
+    .seo-experience {
+      background: url(../img/seo2.jpg) no-repeat center center;
+      background-size: cover;
+    }
+
+    .seo-text {
+      padding: 60px;
+      text-align: center;
+      h3 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.3rem;
+        font-weight: 800;
+        color: $gray;
+        padding-bottom: 15px;
+      }
+
+      p {
+        font-size: 1rem;
+        font-weight: 300;
+        color: $mediumGray;
+        letter-spacing: 1px;
+        padding-bottom: 15px;
+      }
+
+      a {
+        display: block;
+        margin: 30px auto 0;
+        text-decoration: none;
+        text-align: center;
+        color: #ffffff;
+        width: 320px;
+        padding: 20px 0;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        background-image: linear-gradient(
+          to right,
+          #46aff9 0%,
+          #b4e4fa 51%,
+          #8eb5f5 100%
+        );
+        background-size: 200% auto;
+        box-shadow: 0 0 10px rgb(224, 224, 224);
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        transition: 0.5s;
+
+        &:hover {
+          background-position: right center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .seo-info-body {
+    .container {
+      grid-template-columns: 1fr;
+      padding: 40px 20px;
+      grid-gap: 0;
+      grid-row-gap: 50px;
+
+      .seo-results {
+        display: none;
+      }
+
+      .seo-experience {
+        height: 150px;
+      }
+
+      .seo-text {
+        padding: 40px 20px;
+
+        h3 {
+          font-size: 1.2rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+        }
+
+        a {
+          width: 260px;
+          padding: 18px 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+    .seo-info-body {
+      .container {
+        grid-row-gap: 80px;
+
+        .seo-results {
+          display: none;
+        }
+  
+        .seo-experience {
+          height: 125px;
+        }
+  
+        .seo-text {
+          padding: 0;
+        }
+      }
+    }
+  }
