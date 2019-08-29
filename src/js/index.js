@@ -1,5 +1,5 @@
 ScrollOut({
-    targets: ['h2', '.service', '.about-team', '.about-testimonials', '.team-member', '.service'],
+    targets: ['h2', '.service', '.about-team', '.about-testimonials', '.team-member', '.service', '.plan-item'],
     threshold: 0.4,
     once: true
 });
