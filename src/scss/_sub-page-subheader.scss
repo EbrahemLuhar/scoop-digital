@@ -1,4 +1,6 @@
 #sub-page-subheader {
+  position: relative;
+  z-index: 1;
   .sub-page-subheader-top {
     background: $offWhite;
 

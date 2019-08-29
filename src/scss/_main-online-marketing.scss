@@ -68,7 +68,7 @@
 
     .online-marketing-plan {
       padding-top: 60px;
-      
+
       h3 {
         font-family: "Montserrat", sans-serif;
         font-size: 1.8rem;
@@ -111,3 +111,79 @@
     }
   }
 }
+
+@media (max-width: 900px) {
+  .online-marketing-info-body {
+    .container {
+      padding: 40px 20px;
+
+      .online-marketing-row {
+        grid-template-columns: 1fr;
+        padding-bottom: 40px;
+
+        .row-left {
+          padding: 0;
+
+          h3 {
+            font-size: 1.2rem;
+          }
+
+          p {
+            font-size: 0.9rem;
+          }
+        }
+
+        .row-right {
+          display: none;
+        }
+      }
+
+      .divider-line {
+        width: 100%;
+        height: 2px;
+        background-color: $offWhite;
+      }
+
+      .online-marketing-plan {
+        padding-top: 40px;
+
+        h3 {
+          font-size: 1.5rem;
+          padding-bottom: 40px;
+        }
+
+        .online-marketing-grid {
+          grid-template-columns: 1fr;
+          grid-gap: 40px;
+
+          i {
+            font-size: 1.4rem;
+          }
+
+          h5 {
+            font-size: 1.2rem;
+          }
+
+          p {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+    .online-marketing-info-body {
+      .container {
+        .online-marketing-row {
+          .row-left {
+            a {
+                width: 260px;
+                padding: 16px 0;
+            }
+          }
+        }
+      }
+    }
+  }
