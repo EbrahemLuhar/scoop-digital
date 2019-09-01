@@ -62,11 +62,16 @@
             color: $gray;
             padding-bottom: 18px;
           }
+          
           p {
             font-size: 0.9rem;
             font-weight: 300;
             color: $mediumGray;
             letter-spacing: 1px;
+          }
+
+          .blog-btn {
+            width: 20px;
           }
         }
       }
