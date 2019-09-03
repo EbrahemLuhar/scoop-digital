@@ -1,7 +1,175 @@
 .contact-body {
   .container {
     padding: 80px 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
 
-    
+    .contact-left {
+      text-align: left;
+
+      h3 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.3rem;
+        font-weight: 800;
+        color: $gray;
+        padding-bottom: 15px;
+      }
+
+      p {
+        font-size: 1rem;
+        font-weight: 300;
+        color: #a1aab3;
+        letter-spacing: 1px;
+        padding-bottom: 15px;
+      }
+
+      .contact-address {
+        font-size: 1.1rem;
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+
+    .contact-right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .contact-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: stretch;
+        width: 100%;
+
+        .info-block {
+          padding: 15px;
+
+          i {
+            display: inline-block;
+            padding-right: 15px;
+            font-size: 1.6rem;
+            color: $gray;
+          }
+
+          span {
+            font-size: 1.1rem;
+            color: $mediumGray;
+            vertical-align: top;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .contact-body {
+    .container {
+      padding: 60px 20px;
+      grid-template-columns: 1fr;
+  
+      .contact-left {
+        text-align: center;
+        h3 {
+          font-family: "Montserrat", sans-serif;
+          font-size: 1.3rem;
+          font-weight: 800;
+          color: $gray;
+          padding-bottom: 15px;
+        }
+  
+        p {
+          font-size: 1rem;
+          font-weight: 300;
+          color: #a1aab3;
+          letter-spacing: 1px;
+          padding-bottom: 15px;
+        }
+  
+        .contact-address {
+          font-size: 1.1rem;
+          span {
+            font-weight: 600;
+          }
+        }
+      }
+  
+      .contact-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        .contact-info {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          justify-content: stretch;
+          width: 500px;
+          margin: 0 auto;
+  
+          .info-block {
+            padding: 15px;
+  
+            i {
+              display: inline-block;
+              padding-right: 15px;
+              font-size: 1.6rem;
+              color: $gray;
+            }
+  
+            span {
+              font-size: 1.1rem;
+              color: $mediumGray;
+              vertical-align: top;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-body {
+    .container {
+      padding: 40px 20px;
+      grid-gap: 0;
+  
+      .contact-left {
+        text-align: center;
+        h3 {
+          font-size: 1.2rem;
+        }
+  
+        p {
+          font-size: 0.9rem;
+        }
+  
+        .contact-address {
+          font-size: 1rem;
+          span {
+            font-weight: 600;
+          }
+        }
+      }
+  
+      .contact-right {
+        .contact-info {
+          grid-template-columns: 1fr;
+          width: 180px;
+  
+          .info-block {
+            i {
+              font-size: 1.4rem;
+            }
+  
+            span {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
   }
 }
